@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css 展示</title>
+</head>
+<style>
+    html {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    .head-wrapper {
+        width: 100%;
+        height: 300px;
+        background-color: #1b2a49;
+    }
+
+    .head-title {
+        display: inline-block;
+        margin: 6.25rem;
+        font-size: 1.875rem;
+        color: #ffffff;
+    }
+
+    .content-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .content-card {
+        animation-name: item;
+        animation-duration: 1s;
+        margin-right: 20px;
+        margin-top: 10px;
+        width: 350px;
+        padding: 10px;
+        border-radius: 6px;
+    }
+
+    .shadow {
+        box-shadow: 0 10px 40px -10px rgba(0, 64, 128, .2);
+        transition: box-shadow .3s;
+    }
+
+    .card-title-wraper {
+        position: relative;
+        text-align: center;
+        padding: 6px;
+        font-size: 1.25rem;
+        height: 6.25rem;
+    }
+
+    .title {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+
+    }
+
+    .card-title-bg {
+        background-color: #fd7792;
+        color: #ffffff;
+    }
+
+    .card-desc {
+        display: inline-block;
+        margin-top: .625rem;
+    }
+
+    @keyframes item {
+        0% {
+            opacity: 0;
+            transform: translateY(10px)
+        }
+    }
+</style>
+
+<body>
+    <div class="head-wrapper">
+        <span class="head-title">
+            css 功能展示
+        </span>
+    </div>
+    <div class="content-wrapper">
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+        <div class="content-card shadow">
+            <div class="card-title-wraper card-title-bg">
+                <span class="title">Flex 布局</span>
+            </div>
+            <span class="card-desc">Flex 布局实践</span>
+        </div>
+    </div>
+</body>
+
+</html>
